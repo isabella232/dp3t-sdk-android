@@ -91,10 +91,6 @@ dependencies {
 	}
 	implementation 'org.bouncycastle:bcprov-jdk15on:1.65'
 
-	implementation 'com.google.android.gms:play-services-tasks:17.2.1'
-	implementation 'com.google.android.gms:play-services-base:17.6.0'
-	implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.4.1'
-
 	testImplementation 'junit:junit:4.13.2'
 
 	androidTestImplementation 'androidx.benchmark:benchmark-junit4:1.0.0'
@@ -102,4 +98,21 @@ dependencies {
 	androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 	androidTestImplementation 'com.squareup.okhttp3:mockwebserver:3.14.7'
 	androidTestImplementation 'androidx.work:work-testing:2.5.0'
+
+	implementation "org.microg:safe-parcel:$microgSafeParcelVersion"
+	implementation "org.microg.gms:play-services-base:$microgVersion"
+	implementation "org.microg.gms:play-services-base-api:$microgVersion"
+	implementation "org.microg.gms:play-services-base-core:$microgVersion"
+	implementation "org.microg.gms:play-services-base-core-ui:$microgVersion"
+	implementation "org.microg.gms:play-services-basement:$microgVersion"
+	implementation "org.microg.gms:play-services-tasks:$microgVersion"
+	implementation "org.microg.gms:play-services-nearby:$microgVersion"
+	implementation "org.microg.gms:play-services-nearby-api:$microgVersion"
+	implementation "org.microg.gms:play-services-nearby-core:$microgVersion"
+	implementation "org.microg.gms:play-services-nearby-core-ui:$microgVersion"
+	implementation "org.microg.gms:play-services-nearby-core-proto:$microgVersion"
+}
+
+repositories {
+	mavenCentral()
 }
